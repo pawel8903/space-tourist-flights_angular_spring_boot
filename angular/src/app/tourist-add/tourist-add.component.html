@@ -1,0 +1,66 @@
+<div class="component">
+  <h2> Add Tourist</h2>
+  <div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+           First Name:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="touristsData.firstName" placeholder="Tourist First Name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+           Last Name:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="touristsData.lastName" placeholder="Tourist Last Name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+           Gender:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="touristsData.gender" placeholder="Tourist Gender" />
+      </div>
+    </div><div class="row">
+      <div class="col-25">
+        <label>
+           Country:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="touristsData.country" placeholder="Tourist Country" />
+      </div>
+    </div><div class="row">
+      <div class="col-25">
+        <label>
+          Date Of Birth:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="touristsData.dateOfBirth" placeholder="Tourist Date Of Birth" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+          Remarks:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="touristsData.remarks" placeholder="Tourist Remarks" />
+      </div>
+    </div>
+    <div class="row btn">
+      <button (click)="addTourist()">Save</button>
+    </div>
+    
+  </div>

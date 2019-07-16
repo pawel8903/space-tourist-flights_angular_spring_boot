@@ -1,0 +1,101 @@
+<div >
+  
+  <div class="component">
+    <h2>Edit Tourist </h2>
+    <div class="row">
+      <div class="col-25">
+        <label>
+          First Name:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="touristsData.firstName" placeholder="Tourist First Name" />
+      </div>
+    </div>
+    <div class="row">
+  <div class="col-25">
+    <label>
+       Last Name:
+    </label>
+  </div>
+  <div class="col-75">
+    <input class="in" [(ngModel)]="touristsData.lastName" placeholder="Tourist Last Name" />
+  </div>
+</div>
+    <div class="row">
+  <div class="col-25">
+    <label>
+       Gender:
+    </label>
+  </div>
+  <div class="col-75">
+    <input class="in" [(ngModel)]="touristsData.gender" placeholder="Tourist Gender" />
+  </div>
+</div><div class="row">
+  <div class="col-25">
+    <label>
+       Country:
+    </label>
+  </div>
+  <div class="col-75">
+    <input class="in" [(ngModel)]="touristsData.country" placeholder="Tourist Country"  />
+  </div>
+</div>
+    <div class="row">
+  <div class="col-25">
+    <label>
+       Date Of Birth:
+    </label>
+  </div>
+  <div class="col-75">
+    <input class="in" [(ngModel)]="touristsData.dateOfBirth" placeholder="Tourist Date Of Birth" />
+  </div>
+</div>
+    <div class="row">
+  <div class="col-25">
+    <label>
+       Remarks:
+    </label>
+  </div>
+  <div class="col-75">
+    <input class="in" [(ngModel)]="touristsData.remarks" placeholder="Tourist Remarks"  />
+  </div>
+  
+</div>
+    <div class="row btn">
+      <button (click)="updateTourist()">Update</button>
+    </div>
+    
+  </div>
+  <div class="double_list">
+    <div class="inline">
+      <label>Added flight:</label>
+      <ul class="list">
+        <li *ngFor="let p of touristsData.flights; let i=index;">
+          <div>
+            <span class="badge">{{i+1}}</span> {{p.departure}}
+          </div>
+          <button class="delete" title="delete tourist"
+                  (click)="delete(p.id)">
+            x
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="inline">
+      <label>Add flight :</label>
+      <ul class="list">
+        <li *ngFor="let p of flightData; let i=index;">
+          <div>
+            <span class="badge">{{i+1}}</span> {{p.departure}}
+          </div>
+          <button class="delete" title="delete flight"
+                  (click)="addFlight(p.id)">
+            +
+          </button>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

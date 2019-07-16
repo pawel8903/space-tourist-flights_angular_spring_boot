@@ -1,0 +1,171 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Products Component's private CSS styles */
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.component {
+  margin-top: 30px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ 
+}
+.double_list {
+  margin-top: 20px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.single_list {
+  margin-top: 20px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+  .list li {
+    position: relative;
+    cursor: pointer;
+    background-color: #EEE;
+    margin: .5em;
+    height: 2.2em;
+    border-radius: 4px;
+  }
+
+    .list li:hover {
+      color: #607D8B;
+      background-color: #DDD;
+      left: .1em;
+    }
+
+  .list a {
+    color: #888;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 250px;
+  }
+
+    .list a:hover {
+      color: #607D8B;
+    }
+
+  .list .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+   
+    left: -1px;
+    top: -4px;
+    height: 2.6em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 4.5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+  margin-left: 10px;
+}
+
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+  button.delete {
+    position: relative;
+    left: 194px;
+    top: -32px;
+    background-color: gray !important;
+    color: white;
+  }
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.in, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.btn{
+
+}
+
+  btn:hover {
+    background-color: #45a049;
+  }
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, btn {
+    width: 100%;
+    margin-top: 0;
+  }
+}

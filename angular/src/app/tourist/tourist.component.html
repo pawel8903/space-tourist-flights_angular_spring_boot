@@ -1,0 +1,16 @@
+
+
+<h2 class="component">Tourist List</h2>
+<div class="single_list">
+  <ul class="list">
+    <li *ngFor="let p of tourists; let i=index;">
+      <a routerLink="/tourist-edit/{{p.id}}">
+        <span class="badge">{{i+1}}</span> {{p.firstName}} {{p.lastName}}
+      </a>
+      <button class="delete" title="delete tourist"
+              (click)="delete(p.id)">
+        x
+      </button>
+    </li>
+  </ul>
+</div>

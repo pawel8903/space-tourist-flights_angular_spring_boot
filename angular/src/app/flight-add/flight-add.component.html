@@ -1,0 +1,49 @@
+<div class="component">
+  <h2>Add Flight</h2>
+  <div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+          Departure:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="flightData.departure" placeholder="Flight departure" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+          Arrival:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="flightData.arrival" placeholder="Flight arrival" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+          Price:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="flightData.price" placeholder="Flight Price" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>
+          Number of seats:
+        </label>
+      </div>
+      <div class="col-75">
+        <input class="in" [(ngModel)]="flightData.numberOfSeats" placeholder="Flight Number of seats" />
+      </div>
+    </div>
+    <div class="row btn">
+      <button (click)="addFlight()">Save</button>
+    </div>
+  </div>
+      
+</div>
